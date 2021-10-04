@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="" colour="pink">
+<font colour="green" size="8">
+
+        {% for product in productss %}
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{ product.image }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ product.productname }}</h5>
+    <p class="card-text">{{ product.discription }}</p>
+    <p class="card-text">Price - {{ product.price }}</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+
+
+
+    {% endfor %}
+  </div>
+</div>
+
+</font>
+</body>
+</html>
